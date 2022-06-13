@@ -22,3 +22,11 @@ C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\obj\Debug\net6.0-windows\ref\P
 C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\obj\Debug\net6.0-windows\Views\PassportsView.g.cs
 C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\obj\Debug\net6.0-windows\Views\PassportsView.baml
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\Prism.dll
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\obj\Debug\net6.0-windows\PassportWPF.csproj.CopyComplete
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Rahul-Web\c#\Exercises\PassportWPF\PassportWPF\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

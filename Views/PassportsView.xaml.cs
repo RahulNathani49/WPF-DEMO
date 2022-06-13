@@ -1,4 +1,6 @@
 ﻿using PassportWPF.Models;
+using PassportWPF.ViewModels;
+
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,6 +16,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+
 
 namespace PassportWPF.Views
 {
@@ -22,16 +26,26 @@ namespace PassportWPF.Views
     /// </summary>
     public partial class PassportsView : UserControl
     {
-        private readonly ObservableCollection<Passport> passports;
         public PassportsView()
         {
             InitializeComponent();
-            passports = new ObservableCollection<Passport>();
- 
-            passports.Add(new Passport("Rahul","Nathani",new DateTime(2002, 06, 21),"Canada"));
-            passports.Add(new Passport("Het", "Patel", new DateTime(2001, 04, 11), "India"));
+            DataContext = new PassportsViewModel();
+        }
 
-            PassportData.ItemsSource = passports;
+        private void Add_click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source=751FJW2\SQLEXPRESS;Initial Catalog=passportDatabase;Integrated Security=True;Pooling=False");
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("insert into passports(firstname) values('" + firstname.Text + "')", connection);
+            int i = cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+                MessageBox.Show("data saved");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }
